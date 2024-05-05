@@ -37,7 +37,7 @@
            cursor: pointer;
         }
         .score{
-            color: #042e8a;
+            color: darkmagenta;
             font-weight: bolder;
             
             
@@ -70,15 +70,17 @@
         font-size: 26px;
       }
       .restart{
-        width: 52px;
+        width: 86px;
         border-radius: inherit;
       }
       .exit{
-        width: 52px;
+        width: 86px;
         border-radius: inherit;
+       
       }
       .restart:hover{
         background-color:grey;
+       
       }
       .submit:hover{
         background-color:grey;
@@ -144,7 +146,7 @@
        
        quiz.addEventListener('submit', (e) => {
         e.preventDefault();
-        if(count<2){
+        if(count<10){
             if(submit.textContent==='Submit'){
                 let correctAns = 0;
                 if(oper[randomOper]==='+'){
